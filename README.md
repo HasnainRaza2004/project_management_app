@@ -1,50 +1,133 @@
-# Welcome to your Expo app 👋
+📱 Project Management App
+A cross-platform mobile application built with Expo and React Native to streamline project management tasks.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+🚀 Features
+Task creation and assignment
 
-## Get started
+Real-time project updates
 
-1. Install dependencies
+Team collaboration tools
 
-   ```bash
-   npm install
-   ```
+Notifications and reminders
 
-2. Start the app
+🛠️ Prerequisites
+Before setting up the project, ensure you have the following installed:
 
-   ```bash
-    npx expo start
-   ```
+Node.js (LTS version recommended)
 
-In the output, you'll find options to open the app in a
+Expo CLI:
+Install globally using:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+bash
+Copy
+Edit
+npm install -g expo-cli
+Git
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+📦 Installation
+Clone the repository:
 
-## Get a fresh project
+bash
+Copy
+Edit
+git clone https://github.com/HasnainRaza2004/project_management_app.git
+cd project-management-app
+Install dependencies:
 
-When you're ready, run:
+bash
+Copy
+Edit
+npm install
+or
 
-```bash
-npm run reset-project
-```
+bash
+Copy
+Edit
+yarn install
+📱 Running the App
+Using Expo Go (Recommended for Development)
+Start the development server:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+bash
+Copy
+Edit
+expo start
+This will open a browser window with a QR code.
 
-## Learn more
+Open the app on your device:
 
-To learn more about developing your project with Expo, look at the following resources:
+Install the Expo Go app from the Google Play Store or Apple App Store.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Scan the QR code displayed in the browser or terminal using Expo Go.
 
-## Join the community
+Using a Development Build
+If your project uses custom native modules or requires a development build:
 
-Join our community of developers creating universal apps.
+Create a development build:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+bash
+Copy
+Edit
+eas build -p android --profile development
+Ensure your eas.json has a development profile configured.
+
+Install the APK on your device:
+
+Once the build is complete, download the APK from the Expo dashboard.
+
+Transfer and install the APK on your Android device.
+
+Start the development server:
+
+bash
+Copy
+Edit
+expo start --dev-client
+📤 Sharing the App
+To share the APK with others:
+
+Build the APK for internal distribution:
+
+bash
+Copy
+Edit
+eas build -p android --profile internal
+Ensure your eas.json has an internal profile configured.
+
+Share the download link:
+
+Once the build is complete, Expo will provide a public URL to the APK.
+
+Share this URL with anyone; they can download and install the app directly.
+
+🧪 Running Tests
+To run the test suite:
+
+bash
+Copy
+Edit
+npm test
+or
+
+bash
+Copy
+Edit
+yarn test
+📄 Configuration
+Key configuration files:
+
+app.json: Expo app configuration.
+
+eas.json: EAS build profiles.
+
+Ensure these files are properly set up before building or deploying the app.
+
+🧰 Built With
+React Native
+
+Expo
+
+EAS Build
+
+📬 Contact
+For questions or support, please contact hasnainraza.dev26.com.
